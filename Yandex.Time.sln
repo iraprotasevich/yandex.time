@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Time", "Yandex.Time\Yandex.Time.csproj", "{BEBAF949-35A4-4149-872C-EF62655D807E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEBAF949-35A4-4149-872C-EF62655D807E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBAF949-35A4-4149-872C-EF62655D807E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBAF949-35A4-4149-872C-EF62655D807E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBAF949-35A4-4149-872C-EF62655D807E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7FF67C8-7BCA-473D-B960-B56E6F1D9EB7}
+	EndGlobalSection
+EndGlobal

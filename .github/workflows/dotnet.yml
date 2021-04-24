@@ -32,6 +32,9 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
         
     - name: Set up Docker Buildx
       id: buildx
@@ -41,7 +44,7 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v2
       with:
-        context: /home/runner/work/yandex.time/yandex.time
+        context: .
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/yandex-time:latest
         

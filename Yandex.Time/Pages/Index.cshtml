@@ -6,5 +6,24 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Current time is <b>@DateTime.UtcNow</b></p>
+    <p>Current time is</p> 
+    <p id="time">
+        Current time is
+        <noscript>@DateTime.UtcNow</noscript>
+        <script>
+            (function (id) {
+                function addZero(initial) {
+                    return (initial < 10 ? '0' : '') + initial;
+                }
+                var localTime = new Date();
+                var year = localTime.getFullYear();
+                var month = addZero(localTime.getMonth() + 1);
+                var date = addZero(localTime.getDate());
+                var hours = addZero(localTime.getHours());
+                var minutes = addZero(localTime.getMinutes());
+                var seconds = addZero(localTime.getSeconds());
+                document.getElementById(id).innerHTML = date + "." + month + "." + year + " " + hours + ":" + minutes + ":" + seconds;
+            })("time");
+        </script>
+    </p>
 </div>
